@@ -5,20 +5,7 @@ const meta = {
   argTypes: {
     variant: {
       control: { type: "radio" },
-      options: [
-        "Body1",
-        "Body2",
-        "Caption",
-        "H1",
-        "H2",
-        "H3",
-        "H4",
-        "Link1",
-        "Link2",
-        "Overline",
-        "Subtitle1",
-        "Subtitle2",
-      ],
+      options: ["search", "password", "text"],
     },
   },
   component: TextField,

@@ -83,23 +83,3 @@ export const LinkAsButton: Story = {
     variant: "primary",
   },
 };
-
-export const LinkAsButton2: Story = {
-  args: {
-    children: "link as button",
-    fullWidth: false,
-    href: "https://google.com",
-    target: "_blank",
-    variant: "primary",
-  },
-};
-
-export const LinkAsButton3: Story = {
-  args: {
-    children: "link as button",
-    fullWidth: false,
-    href: "https://google.com",
-    target: "_blank",
-    variant: "primary",
-  },
-};
