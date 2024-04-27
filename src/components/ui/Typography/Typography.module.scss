@@ -1,0 +1,73 @@
+.H1 {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-l);
+}
+
+.H2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-l);
+}
+
+.H3 {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xxl);
+}
+
+.H4 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xxl);
+}
+
+.Body1 {
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-m);
+}
+
+.Body2 {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-m);
+}
+
+.Subtitle1 {
+  font-weight: var(--font-weight-bold);
+}
+
+.Subtitle2 {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+}
+
+.Caption {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-s);
+}
+
+.Overline {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-s);
+}
+
+@mixin link {
+  font-weight: var(--font-weight-regular);
+  color: var(--color-info-500);
+  text-decoration: underline;
+}
+
+.Link1 {
+  @include link;
+
+  font-size: var(--font-size-s);
+}
+
+.Link2 {
+  @include link;
+
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-s);
+}

@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
+import { Vector } from "@/components/ui/button/Vector";
+
 import { Button } from "./";
 
 const meta = {
@@ -10,7 +12,12 @@ const meta = {
     },
   },
   component: Button,
-
+  parameters: {
+    backgrounds: {
+      default: "dark",
+      values: [{ name: "dark", value: "#000" }],
+    },
+  },
   tags: ["autodocs"],
   title: "Components/Button",
 } satisfies Meta<typeof Button>;
@@ -21,16 +28,38 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    children: "Primary Button",
+    children: "Button Primary",
     disabled: false,
+    variant: "primary",
+  },
+};
+
+export const PrimaryWithIcon: Story = {
+  args: {
+    children: (
+      <>
+        <Vector />
+        Button primary
+      </>
+    ),
     variant: "primary",
   },
 };
 
 export const Secondary: Story = {
   args: {
-    children: "Secondary Button",
-    disabled: false,
+    children: "Button Secondary",
+    variant: "secondary",
+  },
+};
+export const SecondaryWithIcon: Story = {
+  args: {
+    children: (
+      <>
+        <Vector />
+        Button Secondary
+      </>
+    ),
     variant: "secondary",
   },
 };
@@ -51,5 +80,26 @@ export const LinkAsButton: Story = {
     fullWidth: false,
     href: "https://google.com",
     target: "_blank",
+    variant: "primary",
+  },
+};
+
+export const LinkAsButton2: Story = {
+  args: {
+    children: "link as button",
+    fullWidth: false,
+    href: "https://google.com",
+    target: "_blank",
+    variant: "primary",
+  },
+};
+
+export const LinkAsButton3: Story = {
+  args: {
+    children: "link as button",
+    fullWidth: false,
+    href: "https://google.com",
+    target: "_blank",
+    variant: "primary",
   },
 };
